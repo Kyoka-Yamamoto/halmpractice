@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HamlPractice</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta charset="utf-8">
+    <title>TRY</title>
+    <meta name="description" content="Ogusu">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+     <div class="header">
+      <div class="logo">
+      <p>LOGO</P>
+      </div>
+      <div class="header-menu">
+        <p class="header-menu1"><a href="#1">ログイン</a></p>
+        <p class="header-menu2"><a href="#2">新規登録</a></p>
+        <p class="header-menu3"><a href="#3">新規登録</a></p>
+      </div>
+     </div>
+
+   <div class="app">
+    <%= yield %>
+   </div>
+  </body>
+</html>

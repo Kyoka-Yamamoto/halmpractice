@@ -1,0 +1,20 @@
+.subscription
+  -@subscriptions.each do |subscription|
+    .plan
+      .plan-tagline
+        %h2
+          =subscription.tagline
+      .plan-container
+        .container-detail1
+          =subscription.name
+        .container-detail2
+          .box1
+            =subscription.description
+          .box2
+            =subscription.quantity
+      .plan-example
+        %h3
+          text
+      .plan-photo
+      .plan-explain
+      .plan-button

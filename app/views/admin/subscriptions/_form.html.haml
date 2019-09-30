@@ -1,0 +1,8 @@
+=bootstrap_form_for [:admin, @subscription], layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-8", :html => {"accept-charset" => "UTF-8"} do |f|
+  = f.text_field :name
+  = f.text_field :tagline
+  = f.text_area :description
+  = f.number_field :price
+  = f.number_field :quantity
+
+  = f.submit

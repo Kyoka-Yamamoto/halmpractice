@@ -1,0 +1,8 @@
+.row
+  .col-sm-12
+    .card.card-border.card-primary
+      .card-header
+        %h3.card-title
+          ="Edit #{@subscription.name}"
+      .card-body
+        = render "form"

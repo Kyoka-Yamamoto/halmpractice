@@ -1,0 +1,21 @@
+-@subscriptions.each do |subscription|
+  .mx-auto{:style => "width: 800px"}
+    .card.mb-3
+      .row
+        .col-md-4
+          %img.card-img{:alt => "...", :src => "..."}/
+        .col-md-8
+          .card-body
+            %h5.card-title
+              =link_to subscription.name, admin_subscription_path(subscription)
+            .card-text
+              =subscription.tagline
+            .card-text
+              =subscription.description
+            .card-text
+              ="Price: #{subscription.price}"
+            .card-text
+              ="Quantity: #{subscription.quantity}"
+.card-text
+  .float-right.mr-5
+    =link_to "Create", new_admin_subscription_path, class: 'm-3 btn-primary btn-lg'

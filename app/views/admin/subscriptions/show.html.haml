@@ -1,0 +1,23 @@
+.mx-auto{:style => "width: 800px"}
+  .card.mb-3
+    .row
+      .col-md-4
+        %img.card-img{:alt => "...", :src => "..."}/
+      .col-md-8
+        .card-body
+          %h5.card-title
+            =@subscription.name
+          .card-text
+            =@subscription.tagline
+          .card-text
+            =@subscription.description
+          .card-text
+            ="Price: #{@subscription.price}"
+          .card-text
+            ="Quantity: #{@subscription.quantity}"
+  .mt-3
+    .card-text
+      =link_to "Edit", edit_admin_subscription_path, class: 'm-3 btn-primary btn-lg'
+      =link_to "Delete", admin_subscription_path, method: :delete, class: 'm-3 btn-danger btn-lg'
+      .float-right
+        =link_to "Back", admin_subscriptions_path, class: 'm-3 btn-info btn-lg'
