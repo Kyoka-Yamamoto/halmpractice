@@ -10,92 +10,36 @@
 
 
 .plan{
-  padding: 1em;
-  width: 30vw;
-  background-color: rgb(250,240,242);
+  width: 100%;
+  background-color: white;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
 
 
 }
 
-.plan-tagline{
-  border-bottom: 1px solid #000;
-  width: 30vw;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 
-}
 
 .plan-container{
-  width: 30vw;
-  height: 15vh;
+  width: 50%;
+  padding-left: 10em;
   display: flex;
-  align-items: flex-end;
-  flex-flow: column;
+  flex-flow: column nowrap;
 }
 
-.container-detail1{
-  width: 20vw;
-  height: 7vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.plan-name{
+  margin: 0;
 
 }
 
-.container-detail2{
-  width: 20vw;
-  display: flex;
-  justify-content: flex-end;
-  justify-content: space-evenly;
-
-}
-
-.box1{
-  width: 9vw;
-  height: 8vh;
+.plan-image-container{
+  width: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: rgb(243,117,142);
-}
-.box2{
-  width: 8vw;
-  height: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(243,117,142);
 }
 
-.plan-example{
-  height: 6vh;
-  text-align: center;
-}
-
-.plan-photo{
+.plan-image{
   width: 30vw;
   height: 40vh;
-  background-color: rgb(243,117,142);
-}
-
-.plan-explain{
-  width: 30vw;
-  height: 15vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(255,231,257);
-}
-
-.plan-button{
-  width: 30vw;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

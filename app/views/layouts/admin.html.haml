@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+%html
+  %head
+    %title HamlPractice
+    = csrf_meta_tags
+    = csp_meta_tag
+    %meta{:charset => "utf-8"}/
+    %title TRY
+    %meta{:name => "description", :content => "Ogusu"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/earlyaccess/hannari.css" , :rel => "stylesheet"}/
+    %link{:rel => "stylesheet", :href => "styles.css"}/
+
+
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+
+  %body
+    %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      =link_to "Admin Page" ,admin_root_path, class: "navbar-brand"
+      .collapse.navbar-collapse#navbarNavAltMarkup
+        .navbar-nav
+          =link_to 'subscription', admin_subscriptions_path, class: "nav-item nav-link"
+    .container-fluid.p-5
+      = yield

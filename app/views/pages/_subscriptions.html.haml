@@ -1,0 +1,14 @@
+-images = ["https://snaq.me/wp-content/uploads/2019/02/about_snaq.me3_.jpg", "https://snaq.me/wp-content/uploads/2019/02/about_snaq.me1_.jpg", "https://snaq.me/wp-content/uploads/2019/02/about_snaq.me2_.jpg"]
+.about-card-group
+  -Subscription.all.each_with_index do |subscription, i|
+    .item
+      .item-title
+        =subscription.name
+      .item-photo
+        %img{src: images[i], alt: "plan-image#{i.to_s}", class: "item-photo"}
+      .item-text
+        =subscription.tagline
+        %br
+        =subscription.description
+        %br
+        ="Price: #{subscription.price} Quantity:#{subscription.quantity}"

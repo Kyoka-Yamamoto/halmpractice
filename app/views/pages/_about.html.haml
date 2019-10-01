@@ -1,8 +1,11 @@
-.main
-  - @abouts.each do |about|
-    .item
-      .item-title
-        = about[:title]
-      .item-photo
-      .item-text
-        = about[:description]
+.lg-flex-col-container
+  %h3{style: "width: 100%"}
+    %span{:style => "line-height:200%;"}
+      %link{:href => "https://fonts.googleapis.com/css?family=Kalam:300&display=swap", :rel => "stylesheet"}/
+      ="About"
+  %p{style: "margin: 0"}
+    ="様々な種類のおやつを"
+    %br
+    ="食べきりサイズでお届けします。"
+    %br
+    ="マイページでリクエストや評価をするほど自分好みに。"

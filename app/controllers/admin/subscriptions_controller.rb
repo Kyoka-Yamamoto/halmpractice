@@ -1,4 +1,6 @@
 class Admin::SubscriptionsController < ApplicationController
+  layout 'admin'
+  
   def new
     @subscription = Subscription.new
   end
